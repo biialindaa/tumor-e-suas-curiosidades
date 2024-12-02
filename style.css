@@ -1,20 +1,43 @@
 body {
     background-color: antiquewhite;
-    color: rgb(247, 198, 134);
-    margin: 0; /* Remover margens do body para evitar problemas de layout */
-    height: 100vh; /* Garantir que o corpo ocupe a altura total da tela */
+    color: rgb(47, 47, 47);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    background-color: brown;
+    color: white;
+    padding: 20px 0;
 }
 
 h1 {
-    color: brown;
-    text-align: center; /* Adicionando alinhamento central ao h1 */
+    margin: 0;
 }
 
 section {
     background: rgb(12, 11, 0);
     display: flex;
-    justify-content: center; /* Alinha o conteúdo horizontalmente */
-    align-items: center; /* Alinha o conteúdo verticalmente */
-    height: 100%; /* Garantir que a seção ocupe toda a altura disponível */
-    padding-top: 80px; /* Apliquei apenas uma vez */
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+    color: white;
+    padding: 20px;
+    text-align: left;
 }
+
+section div {
+    max-width: 900px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
